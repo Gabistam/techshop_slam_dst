@@ -1,7 +1,7 @@
 <?php
 class Database {
     public $host = "localhost";
-    public $dbname = "techshopSlam";
+    public $dbname = "techshop_slam_dst";
     public $username = "root";
     public $password = "";
     public $connection;

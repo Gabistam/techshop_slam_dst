@@ -20,19 +20,19 @@ Application web de boutique e-commerce high-tech développée en PHP avec archit
 ```bash
 # Cloner le projet dans votre dossier web
 git clone [repository-url] techshop_slam_dst
-cd techshop
+cd techshop_slam_dst
 ```
 
 Ou télécharger et extraire l'archive ZIP dans :
-- **XAMPP** : `C:\xampp\htdocs\techshop\`
-- **WAMP** : `C:\wamp64\www\techshop\`
-- **MAMP** : `/Applications/MAMP/htdocs/techshop/`
+- **XAMPP** : `C:\xampp\htdocs\techshop_slam_dst\`
+- **WAMP** : `C:\wamp64\www\techshop_slam_dst\`
+- **MAMP** : `/Applications/MAMP/htdocs/techshop_slam_dst/`
 
 ### 2. Configuration de la base de données
 
 #### Option A : Via phpMyAdmin
 1. Ouvrir phpMyAdmin (`http://localhost/phpmyadmin`)
-2. Créer une nouvelle base de données nommée `techshop`
+2. Créer une nouvelle base de données nommée `techshop_slam_dst`
 3. Importer le fichier `database.sql` via l'onglet "Importer"
 
 #### Option B : En ligne de commande
@@ -46,7 +46,7 @@ Les paramètres de connexion à la base de données sont définis dans `/classes
 
 ```php
 public $host = "localhost";
-public $dbname = "techshopSlam";
+public $dbname = "techshop_slam_dst";
 public $username = "root";
 public $password = "";
 ```
@@ -61,7 +61,7 @@ Modifier ces valeurs si votre configuration est différente.
 
 ```bash
 # Se placer dans le dossier du projet
-cd /path/to/techshop
+cd /path/to/techshop_slam_dst
 
 # Démarrer le serveur sur le port 8000
 php -S localhost:8000
@@ -73,7 +73,7 @@ Accès : `http://localhost:8000`
 
 1. Placer le projet dans le dossier approprié (`htdocs/` ou `www/`)
 2. Démarrer Apache et MySQL depuis le panneau de contrôle
-3. Accéder à : `http://localhost/techshop/`
+3. Accéder à : `http://localhost/techshop_slam_dst/`
 
 ---
 
@@ -93,7 +93,7 @@ L'application est livrée avec des comptes de démonstration :
 ## 📁 Structure du projet
 
 ```
-techshop/
+techshop_slam_dst/
 ├── index.php              # Page d'accueil
 ├── login.php              # Page d'authentification
 ├── admin.php              # Panneau d'administration
@@ -151,15 +151,8 @@ techshop/
 **Solutions possibles :**
 - Vérifier que MySQL est démarré
 - Vérifier les identifiants dans `classes/Database.php`
-- Vérifier que la base `techshop` existe
+- Vérifier que la base `techshop_slam_dst` existe
 - Confirmer que le fichier `database.sql` a été importé correctement
-
-### Problème : Images non affichées
-
-**Solution :**
-- Vérifier que le dossier `assets/img/` existe
-- Vérifier les permissions du dossier (lecture)
-- Vérifier les chemins dans `database.sql`
 
 ---
 
@@ -187,6 +180,6 @@ Pour toute question technique concernant l'installation ou la configuration, veu
 ---
 
 **Version** : 1.0
-**Date** : Novembre 2024
+**Date** : Novembre 2025
 **Framework** : Aucun (PHP natif + POO)
 **Licence** : Usage pédagogique uniquement
